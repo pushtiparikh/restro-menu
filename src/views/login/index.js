@@ -178,7 +178,6 @@ const Login = () => {
                           placeholder='Password'
                         />
                       </Form.Item>
-                      <Recaptcha onChange={handleRecaptchaChange} />
                       <Form.Item className='login-input mt-4'>
                         <Button
                           type='primary'
