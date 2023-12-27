@@ -21,7 +21,6 @@ import {
 } from '../../redux/slices/globalSettings';
 import { useTranslation } from 'react-i18next';
 import { PROJECT_NAME } from '../../configs/app-global';
-import Recaptcha from 'components/recaptcha';
 import { setMenu } from 'redux/slices/menu';
 const { Title } = Typography;
 
@@ -184,7 +183,7 @@ const Login = () => {
                           htmlType='submit'
                           className='login-form-button'
                           loading={loading}
-                          disabled={!Boolean(recaptcha)}
+                        
                         >
                           {t('Login')}
                         </Button>
